@@ -1,14 +1,17 @@
-public class Pokemon {
-    private String name;
+public abstract class Pokemon {
+    // variables
+    protected String name;
     private int level;
     private int hp;
 
+    // constructor
     public Pokemon(String name, int level, int hp) {
         this.name = name;
         this.level = level;
         this.hp = hp;
     }
 
+    // methods (Pokémon-acties)
     public void eats() {
         System.out.println(name + " eats a poffin!");
     }
@@ -17,6 +20,17 @@ public class Pokemon {
         System.out.println(name + " is loafing around.");
     }
 
+    public void pound() {
+        System.out.println(name + " uses pound.");
+    }
+
+    public void scratch() {
+        System.out.println(name + " uses scratch.");
+    }
+
+    public abstract void plays();
+
+    // getters en setters
     public String getName() {
         return name;
     }
