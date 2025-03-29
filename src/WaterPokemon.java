@@ -1,33 +1,34 @@
-public class FirePokemon extends Pokemon {
+public class WaterPokemon extends Pokemon{
     // variables
     private String type;
     private String weakTo;
     private String strongAgainst;
 
     // constructor
-    public FirePokemon(String name, int level, int hp) {
-        super(name, level, hp);
-        this.type = "Fire";
-        this.weakTo = "Water";
-        this.strongAgainst = "Grass";
+    public WaterPokemon(String name, int hp, int level) {
+        super(name, hp, level);
+        this.type = "Water";
+        this.weakTo = "Electric";
+        this.strongAgainst = "Fire";
     }
 
     // methods / unique skills
-    public void flamethrower() {
-        System.out.println(name + " uses Flamethrower!");
+    public void hydroPump() {
+        System.out.println(name + " uses Hydro Pump!");
     }
 
-    public void firePunch() {
-        System.out.println(name + " uses Fire Punch!");
+    public void waterfall() {
+        System.out.println(name + " uses Waterfall!");
     }
 
     // override
     @Override
     public void plays() {
-        System.out.println(name + " juggles a tiny ember!");
+        System.out.println(name + " splashes in a pond!");
     }
 
-    // getters en setters - een setter voor deze variabelen is misschien wat onlogisch maar wellicht is er een aanval die tijdelijk de type verandert of de strengths en weaknesses...
+    // getters en setters
+
     public String getType() {
         return type;
     }
