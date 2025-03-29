@@ -5,8 +5,8 @@ public class WaterPokemon extends Pokemon{
     private String strongAgainst;
 
     // constructor
-    public WaterPokemon(String name, int hp, int level) {
-        super(name, hp, level);
+    public WaterPokemon(String name, int level, int hp) {
+        super(name, level, hp);
         this.type = "Water";
         this.weakTo = "Electric";
         this.strongAgainst = "Fire";

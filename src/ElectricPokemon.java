@@ -5,8 +5,8 @@ public class ElectricPokemon extends Pokemon{
     private String strongAgainst;
 
     //constructor
-    public ElectricPokemon(String name, int hp, int level) {
-        super(name, hp, level);
+    public ElectricPokemon(String name, int level, int hp) {
+        super(name, level, hp);
         this.type = "Electric";
         this.weakTo = "Grass";
         this.strongAgainst = "Water";

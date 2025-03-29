@@ -5,8 +5,8 @@ public class GrassPokemon extends Pokemon{
     private String strongAgainst;
 
     // constructor
-    public GrassPokemon(String name, int hp, int level) {
-        super(name, hp, level);
+    public GrassPokemon(String name, int level, int hp) {
+        super(name, level, hp);
         this.type = "Grass";
         this.weakTo = "Fire";
         this.strongAgainst = "Electric";
